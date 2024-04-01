@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[color:#F9F9F9];
+}
+
+main {
+  @apply mx-[20px] third:mx-[80px];
+}
+nav,
+footer {
+  @apply mx-[0px] px-[20px] third:px-[80px];
+}
+
+h1.title {
+  @apply inline-block bg-gradient-to-r from-[color:#5863F8] via-[color:#000B18] to-[color:#5863F8] bg-clip-text text-[41px] font-semibold text-transparent;
+}
+
+h1.heading {
+  @apply bg-gradient-to-b from-[color:#AEAEAE] to-[color:#CFCFCFCF] bg-clip-text text-[25px] font-semibold text-transparent;
+}
+
+h2 {
+  @apply text-[25px] text-important;
+}
+
+.scrollable-content {
+  box-shadow: hsl(0 0% 0% / 0.25) 0 0.25em 0.5em;
+
+  scrollbar-gutter: stable both-edges;
+}
+
+.scrollable-content:hover,
+.scrollable-content:active,
+.scrollable-content:focus {
+  overflow-y: scroll;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: hsl(250 15% 60%);
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(250 15% 27%);
+}
+
+/* .scrollable-content::-webkit-scrollbar {
+  display: none;
+} */
+
+option:first {
+  @apply text-unimportant;
+}
+
+select {
+  @apply text-unimportant;
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 80%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+.gradient {
+  background-size: 150%;
+  -webkit-animation: animatedgradient 8s ease infinite alternate;
+  -moz-animation: animatedgradient 8s ease infinite alternate;
+  animation: animatedgradient 8s ease infinite alternate;
+}
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 75% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
