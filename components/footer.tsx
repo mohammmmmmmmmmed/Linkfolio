@@ -38,7 +38,7 @@ const Footer = () => {
               Contact
             </h1>
             <button className='flex w-fit flex-row gap-[8px] text-[14px] text-general'>
-              yeahimjt@gmail.com
+              mohammedsahal0085@gmail.com
             </button>
           </span>
         </section>
